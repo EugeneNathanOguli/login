@@ -11,31 +11,34 @@
 
 <body>
 
-<form action="">
+<form id="loginForm" action="#" novalidate>
 
-<img src="IMAGES/2nd logo.png" alt="Kyambogo University Logo">
+    <img src="IMAGES/2nd logo.png" alt="Kyambogo University Logo">
 
-<H3>KYAMBOGO UNIVERSITY </H3>
-<H5>ACMIS STUDENTS PORTAL</H5>
-
-
+    <h3>KYAMBOGO UNIVERSITY</h3>
+    <h5>ACMIS STUDENTS PORTAL</h5>
 
     <div class="login-form">
         <h5>LOGIN INTO YOUR ACCOUNT</h5>
-        <div><input type="text" placeholder="reg number or student number" required></div>
-        <div><input type="password" placeholder="password" required></div>
-        <div><button><i class="fa-solid fa-arrow-right-to-bracket"></i>SIGN IN</button></div>
+        <div><input id="studentNo" type="text" placeholder="reg number or student number" required></div>
+        <div><input id="password" type="password" placeholder="password" required></div>
 
+        <label class="remember-me">
+            <input type="checkbox">
+            <span>Remember me</span>
+        </label>
+
+        <div><button type="submit"><i class="fa-solid fa-arrow-right-to-bracket"></i> SIGN IN</button></div>
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
     </div>
 
-    <a href="forgot-password.html">Forgot Password?</a>
-    
+    <div class="links">
+        <a href="forgot-password.html">Forgot Password?</a>
+        <a href="login.html">Create account</a>
+    </div>
 </form>
-    
 
-
-    
-        
+<script src="script.js"></script>
 
 </body>
 </html>
